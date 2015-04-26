@@ -1,0 +1,18 @@
+body {
+	background-color: #000;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+	font-weight: 300;
+	color: #666;
+}
+
+.main-logo {
+	text-align: center;
+}
+
+.main-logo img {
+	width: 80%;
+	margin: 0 auto;
+}
