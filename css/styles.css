@@ -1,11 +1,88 @@
 body {
 	background-color: #000;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
 p {
-	font-weight: 300;
-	color: #666;
+	font-weight: 100;
+	color: white;
+	font-size: 0.9rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+h2 {
+	font-size: 1.1rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: white;
+}
+
+h3 {
+	font-size: 1.1rem;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #f974c3;
+}
+
+.location {
+	color: #f974c3;
+	font-size: 1.1rem;
+	display: inline-block;
+	margin-left: 3px;
+	transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+}
+
+.location:hover, .location:focus {
+	color: #ddd;
+}
+
+.location h3 {
+	color: #f974c3;
+	transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+}
+
+.location h3:hover, .location h3:focus {
+	color: #ddd;
+}
+
+.orbit-slides-container h2, .orbit-slides-container h3 {
+	display: inline-block;
+}
+
+.orbit-slides-container h3.date:before {
+	content: " - ";
+}
+
+.cap-wrapper {
+	width: 100%;
+}
+
+.cap-eng {
+	width: 50%;
+	float: left;
+    padding-right: 15px;
+    border-right: 1px solid #ddd;
+    margin-bottom: 0;
+    padding-bottom: 1.25rem;
+}
+
+.cap-jp {
+	width: 50%;
+	float: left;
+    padding-left: 15px;
+    margin-bottom: 0;
+    padding-bottom: 1.25rem;
 }
 
 .main-logo {

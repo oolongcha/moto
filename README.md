@@ -1,0 +1,1 @@
+This project is just a photo gallery of my trip in Japan and Korea in 2015. There's no real reason for anyone to look into the code because I'm a n00b.

@@ -1,0 +1,22 @@
+{
+  "name": "moto",
+  "version": "1.0.0",
+  "description": "Photo gallery of my trip in Japan and Korea",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oolongcha/moto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oolongcha/moto/issues"
+  },
+  "homepage": "https://github.com/oolongcha/moto#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
