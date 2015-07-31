@@ -15,10 +15,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
 	font-size: 1.1rem;
-	font-weight: 400;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	color: white;
+	color: #777;
 }
 
 h3 {
@@ -26,14 +26,148 @@ h3 {
 	font-weight: 200;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	color: #fff;
+}
+
+.top-bar {
+	height: 100px;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.top-bar .name {
+	height: auto;
+	text-align: left;
+}
+
+.top-bar .name img {
+	max-height: 100px;
+	padding: 10px;
+}
+
+.top-bar ul {
+	-webkit-padding-start: 0;
+	-webkit-margin-before: 0;
+	margin-left: 0;
+	text-align: center;
+}
+
+.top-bar-section ul li {
+	float: none;
+	background: transparent;
+}
+
+.top-bar-section ul li > a {
+	font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-weight: 200;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background: transparent;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	-webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section li:not(.has-form) a:not(.button):focus {
+	background: transparent;
+	border-top: 1px solid #f974c3;
+	border-bottom: 1px solid #f974c3;
 	color: #f974c3;
+}
+
+nav.top-bar.expanded .toggle-topbar.menu-icon {
+	margin-top: -62px;
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after {
+	box-shadow: 0 0 0 1px #f974c3, 0 7px 0 1px #f974c3, 0 14px 0 1px #f974c3;
+}
+
+.top-bar.expanded .toggle-topbar a span::after {
+    box-shadow: 0 0 0 1px #888888, 0 7px 0 1px #888888, 0 14px 0 1px #888888;
+}
+
+@media only screen and (min-width: 40.063em) {
+	.top-bar {
+	    z-index: 10;
+	    background-color: rgba(0, 0, 0, 1);
+	    height: auto;
+	}
+
+	.top-bar ul {
+		float: left;
+	}
+
+	.top-bar .name {
+		height: auto;
+	}
+
+	.top-bar-section {
+		height: 100%;
+    	width: 100%;
+	}
+
+	.top-bar-section ul li {
+		height: 100px;
+		float: left;
+	}
+
+	.top-bar-section li:not(.has-form) a:not(.button) {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+@media only screen and (min-width: 64.063em) {
+	.top-bar {
+		min-width: 10%;
+	    position: absolute;
+	    top: 0;
+	    z-index: 10;
+	    left: 10%;
+	    background-color: rgba(0, 0, 0, 0.8);
+	    height: auto;
+	}
+
+	.top-bar .name {
+		height: auto;
+		text-align: center;
+	}
+
+	.top-bar .name img {
+		max-height: 100px;
+		padding: 10px;
+	}
+
+	.top-bar-section ul li {
+		float: none;
+		height: auto;
+	}
+
+	.top-bar-section li:not(.has-form) a:not(.button) {
+		top: auto;
+		transform: none;
+	}
+
+	.top-bar ul {
+		float: none;
+	}
+}
+
+.date {
+	color: #ccc;
 }
 
 .location {
 	color: #f974c3;
 	font-size: 1.1rem;
 	display: inline-block;
-	margin-left: 3px;
+	margin-left: 5px;
 	transition: all .25s ease-in-out;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
@@ -41,11 +175,12 @@ h3 {
 }
 
 .location:hover, .location:focus {
-	color: #ddd;
+	color: #ffafbc;
 }
 
 .location h3 {
 	color: #f974c3;
+	border-bottom: 1px solid transparent;
 	transition: all .25s ease-in-out;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
@@ -53,7 +188,8 @@ h3 {
 }
 
 .location h3:hover, .location h3:focus {
-	color: #ddd;
+	color: #ffafbc;
+	border-bottom: 1px solid #ffafbc;
 }
 
 .orbit-slides-container h2, .orbit-slides-container h3 {
@@ -75,6 +211,7 @@ h3 {
     border-right: 1px solid #ddd;
     margin-bottom: 0;
     padding-bottom: 1.25rem;
+    display: block;
 }
 
 .cap-jp {
@@ -83,6 +220,7 @@ h3 {
     padding-left: 15px;
     margin-bottom: 0;
     padding-bottom: 1.25rem;
+    display: block;
 }
 
 .main-logo {
